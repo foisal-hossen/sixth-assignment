@@ -9,14 +9,14 @@ const loadCategory = () => {
 }
 
 const displayNews = button => {
-  const categoryIdName = data.data.news_category;
+  const categoryIdName = button.data.news_category;
   const buttonsContainer = document.getElementById('button-container');
   
   categoryIdName.forEach(buttonData =>{
     
     const li = document.createElement('li');
     li.innerHTML = `
-  <button onclick="categoryId('${button.category_id}')" class='hover:text-red-400 ' onclick=" "> ${buttonData.category_name} </button>
+  <button onclick="categoryId('${buttonData.category_id}')" class='hover:text-red-400 ' onclick=" "> ${buttonData.category_name} </button>
   ` ;
     buttonsContainer.appendChild(li);
   })
