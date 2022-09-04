@@ -62,22 +62,21 @@
   <div class="navbar bg-base-100 mt-5">
     <div class="flex-1">
       <p class=" normal-case text-xl ml-16 font-bold">sort by view:</p>
-      <ul class="menu menu-horizontal p-0">
-        
+
+      <ul class="dropdown menu menu-horizontal p-0">
         <li tabindex="0" class="bg-slate-100 rounded-md ml-5">
           <a class="hover:text-indigo-600 font-bold "> Default
             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
           </a>
-          <ul class="p-2 bg-base-100 h">
+          <ul class="dropdown-content menu p-2 bg-base-100 h">
             <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
           </ul>
         </li>
       </ul>
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal p-0 mr-16">
-        <li><button class="btn btn-active btn-primary">Today's pick</button></li>
+        <li><button class="btn btn-active btn-primary text-white">Today's pick</button></li>
         <li><button class="btn btn-outline btn-primary ml-5">Button</button></li>
       </ul>
     </div>
@@ -87,17 +86,53 @@
 <!-------------------05.main part------------------------------->
 <section>
  
-  <div class="card card-side bg-base-100 shadow-xl mx-44 mt-10">
-    <figure><img src="https://placeimg.com/200/280/arch" alt="Movie"></figure>
+ <div class="mb-5">
+
+   <div class="card lg:card-side bg-base-100 shadow-xl shadow-indigo-200 rounded-lg mx-32 mt-10">
+    <figure><img class="rounded" src="https://placeimg.com/400/400/arch" alt="Album"></figure>
     <div class="card-body">
-      <h2 class="card-title font-bold">New movie is released!</h2>
-      <p>Click the button to watch on Jetflix app.</p>
-      <div class="card-actions justify-end">
-        <button class="btn btn-primary">Watch</button>
+      <h2 class="card-title font-bold text-lg">New album is released!</h2>
+      <p>Click the button to listen on Spotiwhy app. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, alias sapiente. Minus corporis, recusandae similique hic dolor provident sed! Officia, laborum culpa! Omnis sunt sed explicabo error ex neque incidunt rem exercitationem accusantium harum at, dicta ipsa sit mollitia! Culpa ipsum voluptas consectetur, corrupti dicta voluptates maxime sit! Magni soluta quidem atque dolorem nemo quo inventore voluptas, deserunt quisquam facilis, eveniet commodi reiciendis, ipsum laudantium hic harum eligendi unde quod quis obcaecati ea laborum aut et accusamus. Molestias rerum molestiae voluptatum officia minus iste, ut aliquam sit nisi sint quas praesentium in nam quisquam reiciendis pariatur dolor totam voluptatem repellat?</p>
+      <nav>
+        <div class="navbar bg-base-100">
+      <div class="flex-1">
+        <div class="avatar">
+          <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+            <img src="https://placeimg.com/80/80/people" />
+          </div>
+        </div>
+            <div class="stat">
+            <p class="stat font-bold text-indigo-500 normal-case text-xl">jane coper</p> 
+            <p class="stat-desc ml-5">Jan 1st - Feb 1st</p> 
+            </div>
+           <div class="fill-pink-500 ml-20">  
+          <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10"><path d="m11.998 5c-4.078 0-7.742 3.093-9.853 6.483-.096.159-.145.338-.145.517s.048.358.144.517c2.112 3.39 5.776 6.483 9.854 6.483 4.143 0 7.796-3.09 9.864-6.493.092-.156.138-.332.138-.507s-.046-.351-.138-.507c-2.068-3.403-5.721-6.493-9.864-6.493zm.002 3c2.208 0 4 1.792 4 4s-1.792 4-4 4-4-1.792-4-4 1.792-4 4-4zm0 1.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5z" fill-rule="nonzero"/></svg>
+        </div>
+        <div class="stat ">
+          <div class="stat-title font-bold">Page Views</div>
+          <div class="stat-value text-secondary">2.6M</div>
+          <div class="stat-desc ">21% more than last month</div>
+        </div>
+    
       </div>
+      <div class="flex-none">
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn-circle">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 hover:fill-pink-500"><path d="m12.007 2c-5.518 0-9.998 4.48-9.998 9.998 0 5.517 4.48 9.997 9.998 9.997s9.998-4.48 9.998-9.997c0-5.518-4.48-9.998-9.998-9.998zm1.523 6.21s1.502 1.505 3.255 3.259c.147.147.22.339.22.531s-.073.383-.22.53c-1.753 1.754-3.254 3.258-3.254 3.258-.145.145-.335.217-.526.217-.192-.001-.384-.074-.531-.221-.292-.293-.294-.766-.003-1.057l1.977-1.977h-6.693c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.693l-1.978-1.979c-.29-.289-.287-.762.006-1.054.147-.147.339-.221.53-.222.19 0 .38.071.524.215z" fill-rule="nonzero"/></svg>
+            <div class="indicator">
+            </div>
+          </label>
+        </div>
+        
+        </div>
+        </div>
+           
+      </nav>
     </div>
   </div>
-
+  
+ </div>
+ 
 </section>
 <!----------------------05.main part complete---------------->
 <script src="./news.js"></script>
